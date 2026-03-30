@@ -1,0 +1,36 @@
+/* outerdiv{
+    border: 1px solid #000;
+    height: 200px;
+    width: 600px;
+    background-color: black;
+}
+
+.ineerdiv
+{
+    border: 1px solid #000;
+    height: 200px;
+    width: 600px;
+    background-color: blue;
+    margin: 50px;
+} */
+
+#outerdiv 
+{
+    border: 1px solid black;
+    width: 600px;
+    height: 200px;
+    background-attachment: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.innerdiv
+{
+    border: 1px solid burlywood ;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 47px;
+}
