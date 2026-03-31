@@ -1,0 +1,29 @@
+#div1 {
+    width: 50px;
+    border: 1px solid black;
+    height: 20px;
+    overflow: hidden;
+    text-wrap-mode: nowrap;
+    transition: 
+    width 2s ease-out;
+    color: aqua;
+}
+
+#div1:hover {
+    width: 380px;
+    color: green;
+
+}
+
+#div2{
+width: 200px;
+height: 300px;
+border: 1px solid black;
+margin: auto;
+color: red;
+transition: transform 2s linear;
+}
+
+#div2:hover{
+    transform: skew(40deg,50deg);
+}
