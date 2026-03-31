@@ -59,8 +59,8 @@
     width: 80%;
     border: 1px solid black;
     margin: 50px 200px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
     background-color: #eaf8fe;
     border-radius: 15px;
     display: flex;
@@ -71,7 +71,7 @@
 
     div {
         text-align: center;
-        
+
     }
 
     p {
