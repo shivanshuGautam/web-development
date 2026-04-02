@@ -1,0 +1,41 @@
+:root {
+    --maincolor: blue;
+    --subcolor: green;
+
+}
+
+button {
+    border: 1px solid blue;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: aqua;
+
+}
+
+h1 {
+    color: var(--maincolor)
+}
+
+h3 {
+    color: var(--subcolor);
+}
+
+p {
+    color: var(--subcolor);
+}
+
+th {
+    color: var(--maincolor)
+}
+
+td {
+    color: var(--subcolor);
+}
+
+#new {
+    color: var(--subcolor);
+}
+
+#second {
+    color: var(--maincolor)
+}
