@@ -1,161 +1,26 @@
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
+    font-family: "popins",sans-serif;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 70px;
-    position: sticky;
-    background-color: #fff;
-    top: 0;
-    z-index: 999;
+header{
+    border: 2px solid black;
+}
 
-    button {
-        padding: 14px;
-        color: white;
-        background-color: #125785;
-        border-radius: 8px;
-        border: none;
-        box-shadow: 7px 7px 0 0 #7fa9c4;
+.logo
+{
+    margin: 2px;
+    padding: 2px;
+
+    img{
+        height: 50px;
+        width: 150px;
     }
 }
 
-.imagediv {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    gap: 75px;
-}
-
-.home {
-    display: flex;
-    gap: 45px;
-
-    a {
-        font-size: larger;
-        color: black;
-        text-decoration: none;
-    }
-}
-
-.secondheader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-
-    a {
-        text-decoration: none;
-        color: black;
-        font-size: 22px;
-    }
-
-}
-
-.main {
-    width: 80%;
-    border: 1px solid black;
-    margin: 50px 200px;
-    padding-right: 30px;
-    padding-left: 30px;
-    background-color: #eaf8fe;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: space-between;
-    align-items: center;
-
-    div {
-        text-align: center;
-
-    }
-
-    p {
-
-        padding-top: 20px;
-        font-size: larger;
-    }
-
-    h1{
-        font-size:xxx-large;
-        padding-top:50px;
-        font-family: poppins,sans-serif;
-    }
-
-
+.nav{
+  margin: 4;
 }
 
 
-
-input {
-    height: 50px;
-    width: 450px;
-    font-size: large;
-    padding-left: 10px;
-    border: 1px solid gray;
-    border-radius: 10px;
-}
-
-.firstmain {
-    display: flex;
-    gap: 30px;
-
-
-    .first {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        font-size: larger;
-    }
-
-}
-
-.secondmain {
-    display: flex;
-    gap: 30px;
-
-
-    .second {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        font-size: larger;
-    }
-
-    .email{
-        width: 600px;
-    }
-
-    .qualification{
-        width: 300px;
-    }
-
-
-}
-
-.second1 {
-    display: flex;
-    flex-direction: column;
-
-    label {
-        text-align: left;
-    }
-
-    input{
-        width: 950px;
-    }
-}
-
-.thirdmain {
-    display: flex;
-    gap: 30px;
-
-    .third {
-        display: flex;
-        flex-direction: column;
-    }
-}
