@@ -333,3 +333,12 @@ footer {
     text-align: center;
   }
 }
+.icons{
+  i{
+    color: black;
+  }
+  a:hover{
+    background-color: #22cf87;
+  }
+
+}
