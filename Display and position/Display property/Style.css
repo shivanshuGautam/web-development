@@ -1,0 +1,24 @@
+*{
+    margin: 0px; padding: 0px;
+}
+
+.box{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    display: inline-block;
+
+}
+#box1{
+    text-align: center;
+}
+#box2{
+    text-align: center;
+}
+#box3{
+    text-align: center;
+}
+#box4{
+    text-align: center;
+}

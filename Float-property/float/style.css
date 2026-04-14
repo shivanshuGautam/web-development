@@ -1,0 +1,29 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+#container{
+    height: 250px;
+    width: 500px;
+    border: 2px solid black;
+    background: blueviolet;
+}
+
+#box1{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background: burlywood;
+    margin: 2px;
+    float: right;
+}
+
+#box2{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background: burlywood;
+    margin: 2px;
+    float: left;
+}

@@ -1,0 +1,29 @@
+#head {
+    background: burlywood;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#link {
+    color: brown;
+    text-decoration: none;
+    text-align: center;
+}
+
+#head1 {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-align: center;
+}
+
+#head2 {
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-align: center;
+}
+
+#head3 {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-align: center;
+}

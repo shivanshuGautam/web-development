@@ -1,0 +1,29 @@
+*{
+    margin:0px;
+    padding: 0px;;
+}
+.box{
+    background: blue;
+    margin: 5px;
+    padding: 5px;
+    height: 60px;
+    width: 60px;
+}
+
+#box1{
+    position: static;
+}
+#box2{
+    position: relative;
+    top: 20px;
+    left: 70px;
+}
+#box3{
+    position: absolute;
+    top: 20px;
+}
+#box4{
+    position: fixed;
+    left: 180px;
+}
+ 

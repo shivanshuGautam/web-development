@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+
+.pad{
+    height: 50px;
+    width: 50px;
+    padding: 2px;
+}
+
+#first{
+    background: goldenrod;
+    margin: 5px;
+}
+#second{
+
+    background: goldenrod;
+    margin: 5px;
+}
