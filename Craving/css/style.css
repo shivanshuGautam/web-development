@@ -113,6 +113,29 @@ header {
  color:  #c2410c;
  flex-grow: 1;
      
+}
 
+.carousel-item{
+    position: relative;
+}
+
+.carousel-item .content{
+ position: absolute;
+ top: 40%;
+ left: 50%;
+ text-align: center;
+ transform: translate(-50%, -50%);
+ color: white;
+
+}
+.searchBar
+{
+    max-width:700px;
+    width: 100%;
+}
+
+.carousel-item img {
+  height: 80vh;  
+  object-fit: cover;
 }
 
