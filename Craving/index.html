@@ -3,209 +3,574 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
-      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
   </head>
-
   <body>
-    <header class="d-flex justify-content-between px-5 align-content-center">
-      <!-- logocraving -->
-      <div class="img">
-        <a href="#"
-          ><img src="./Images/logo-light.png" alt="" class="logo-img ms-5"
-        /></a>
-      </div>
-
-      <!-- loginbuttion register -->
-      <div class="nav_login d-flex gap-3 align-items-center">
-        <a href="#" class="btn text-white">Login</a>
-        <a href="#" class="btn text-white">Register</a>
+    <header>
+      <div
+        class="header d-flex justify-content-between align-items-center mx-5"
+      >
+        <div class="headerLogo">
+          <a href="./index.html">
+            <img
+              src="./Images/logo-light.png""
+              alt="Logo"
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <div class="loginRegister">
+          <a href="./login.html" class="login btn text-white" id="login"
+            >Login</a
+          >
+          <a href="./register.html" class="register btn" id="register"
+            >Register</a
+          >
+        </div>
       </div>
     </header>
-
-    <!-- mainsection -->
     <main>
-      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-inner">
-          <!-- SLIDE1 -->
-          <div class="carousel-item active">
-            <img src="./Images/slider-2.jpeg" class="d-block w-100" alt="..." />
-
-            <!-- CONTENT -->
-            <div class="content">
-              <div class="d-flex justify-content-center text-center">
-                <h1 class="display-4 fw-bolder">
-                  <b>Your Favorite Food,</b> <br /><b>Delivered Fast</b>
-                </h1>
+      <!-- HeroSection -->
+      <section>
+        <div class="herosection">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./Images/slider-1.jpeg"
+                  class="d-lg-block w-100 carousel-img dull-img"
+                  alt="..."
+                />
               </div>
-              <div class="d-flex justify-content-center">
-                <p>
-                  <b>
-                    Order from thousands of restaurants and get it delivered to
-                    your doorstep</b
-                  >
-                </p>
+              <div class="carousel-item">
+                <img
+                  src="./Images/slider-2.jpeg"
+                  class="d-flex w-100 carousel-img dull-img"
+                  alt="..."
+                />
               </div>
-              <!-- botton -->
-              <div
-                class="d-flex justify-content-center align-content-center gap-3 botton"
+              <div class="carousel-item">
+                <img
+                  src="./Images/slider-3.jpeg"
+                  class="d-flex w-100 carousel-img dull-img"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="w-100 herocontent d-grid justify-content-center">
+            <div class="text-center text-white d-grid gap-1 vw-100">
+              <h1 class="fw-bold display-5 md:h1">
+                Your Favourite Food, <br />Delivered Fast
+              </h1>
+              <p
+                class="fw-bold fs-6 md:fw-normal fs-normal md:d-flex flex-wrap"
               >
-                <!-- sign up button -->
-                <a href="#" class="btnsignup rounded-2">Sign up</a>
-                <!-- order btn -->
-                <a href="#" class="btnorder rounded-2">Order Now</a>
+                Order from thousands of restaurants and get it delivered to your
+                doorstep
+              </p>
+              <div
+                class="herolinks d-flex flex-wrap gap-2 justify-content-center"
+              >
+                <a href="./register.html" class="btn px-4 py-2 mx-4" id="signUp"
+                  >Sign Up</a
+                >
+                <a href="./order-now.html" class="btn px-4 py-2" id="orderNow"
+                  >Order Now</a
+                >
               </div>
-
-              <!-- search bar -->
-              <div class="searchBar mt-4">
-                <span>
-                  <i class="bi bi-search"></i>
-                </span>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div
+                class="search d-flex border rounded mt-4 d-lg-flex align-items-center p-1 mt-5"
+              >
+                <i class="bi bi-search fw-bold ps-2"></i>
                 <input
                   type="text"
-                  class="border border-0 form-control"
-                  placeholder=" Search Restaurents or dishes...."
+                  name="menuSearch"
+                  id="menuSearch"
+                  class="menuSearch form-control bg-transparent border border-0 shadow-none"
+                  placeholder="Search restaurants or dishes..."
                 />
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <!-- SLIDE2 -->
-          <div class="carousel-item">
-            <img src="./Images/slider-2.jpeg" class="d-block w-100" alt="..." />
-
-            <!-- CONTENT -->
-            <div class="content">
-              <div class="d-flex justify-content-center text-center">
-                <h1 class="display-4 fw-bolder">
-                  <b>Your Favorite Food,</b> <br /><b>Delivered Fast</b>
-                </h1>
+      <!-- card Section -->
+      <section
+        class="restaurant-card py-5 md:py-5 d-flex justify-content-center"
+      >
+        <div class="restaurant-div px-3">
+          <h2 class="card-heading fw-bolder">Featured Restaurants</h2>
+          <p class="restaurant-available">6 restaurants available</p>
+          <div class="card-outer d-grid mt-4">
+            <!-- Card 1 -->
+            <div class="card border-0 rounded-3">
+              <div class="image position-relative">
+                <img
+                  src="./Images/card-1.jpeg"
+                  alt="image"
+                  class="w-100 border-0 rounded-top-3"
+                />
+                <span class="star position-absolute rounded-pill px-2">
+                  <i class="bi bi-star-fill"></i>
+                  3.6
+                </span>
               </div>
-              <div class="d-flex justify-content-center">
-                <p>
-                  <b>
-                    Order from thousands of restaurants and get it delivered to
-                    your doorstep</b
-                  >
+              <div class="description p-3 border-0">
+                <h6 class="fw-bolder">Under The Mango Tree</h6>
+                <p class="">
+                  Enjoy the thrill of grill and barbecue at Under The Mango Tree
+                  restaurant at Jehan Numa Palace, Bhopal. Head here now!
                 </p>
-              </div>
-              <!-- botton -->
-              <div
-                class="d-flex justify-content-center align-content-center gap-3 botton"
-              >
-                <!-- sign up button -->
-                <a href="#" class="btnsignup rounded-2">Sign up</a>
-                <!-- order btn -->
-                <a href="#" class="btnorder rounded-2">Order Now</a>
+                <div class="dishes">
+                  <span class="rounded py-1 px-2 mx-1">Indian</span>
+                  <span class="rounded py-1 px-2 mx-1">Chinese</span>
+                  <span class="rounded py-1 px-2 mx-1">Italian</span>
+                </div>
+                <hr class="bg-opacity-10" />
+                <a href="./order-now.html" class="btn w-100 py-2" id="explore"
+                  >Explore more</a
+                >
               </div>
             </div>
-          </div>
-          <!-- SLIDE3 -->
-          <div class="carousel-item">
-            <img src="./Images/slider-3.jpeg" class="d-block w-100" alt="..." />
-
-            <!-- CONTENT -->
-            <div class="content">
-              <div class="d-flex justify-content-center text-center">
-                <h1 class="display-4 fw-bolder">
-                  <b>Your Favorite Food,</b> <br /><b>Delivered Fast</b>
-                </h1>
+            <!-- Card 2 -->
+            <div class="card border-0 rounded-3">
+              <div class="image position-relative">
+                <img
+                  src="./Images/card-2.jpeg"
+                  alt="image"
+                  class="w-100 border-0 rounded-top-3"
+                />
+                <span class="star position-absolute rounded-pill px-2">
+                  <i class="bi bi-star-fill"></i>
+                  4.8
+                </span>
               </div>
-              <div class="d-flex justify-content-center">
-                <p>
-                  <b>
-                    Order from thousands of restaurants and get it delivered to
-                    your doorstep</b
-                  >
+              <div class="description p-3 border-0">
+                <h6 class="fw-bolder">Raj darbar</h6>
+                <p class="">
+                  Raj Darbar is a one-of-a-kind Indian restaurant that offers a
+                  unique dining experience for families and friends with a
+                  dhaba-style theme.
                 </p>
-              </div>
-              <!-- botton -->
-              <div
-                class="d-flex justify-content-center align-content-center gap-3 botton"
-              >
-                <!-- sign up button -->
-                <a href="#" class="btnsignup rounded-2">Sign up</a>
-                <!-- order btn -->
-                <a href="#" class="btnorder rounded-2">Order Now</a>
+                <div class="dishes">
+                  <span class="rounded py-1 px-2 mx-1">Indian</span>
+                  <span class="rounded py-1 px-2 mx-1">Chinese</span>
+                  <span class="rounded py-1 px-2 mx-1">Italian</span>
+                </div>
+                <hr class="bg-opacity-10" />
+                <a href="./order-now.html" class="btn w-100 py-2" id="explore"
+                  >Explore more</a
+                >
               </div>
             </div>
-          </div>
-          <!-- SLIDE4 -->
-          <div class="carousel-item">
-            <img src="./Images/slider-4.jpeg" class="d-block w-100" alt="..." />
-
-            <!-- CONTENT -->
-            <div class="content">
-              <div class="d-flex justify-content-center text-center">
-                <h1 class="display-4 fw-bold">
-                  <b>Your Favorite Food,</b> <br /><b>Delivered Fast</b>
-                </h1>
+            <!-- Card 3 -->
+            <div class="card border-0 rounded-3">
+              <div class="image position-relative">
+                <img
+                  src="./Images/card-3.jpeg"
+                  alt="image"
+                  class="w-100 border-0 rounded-top-3"
+                />
+                <span class="star position-absolute rounded-pill px-2">
+                  <i class="bi bi-star-fill"></i>
+                  4.1
+                </span>
               </div>
-              <div class="d-flex justify-content-center">
-                <p>
-                  <b>
-                    Order from thousands of restaurants and get it delivered to
-                    your doorstep</b
-                  >
+              <div class="description p-3 border-0">
+                <h6 class="fw-bolder">Countryside Culture</h6>
+                <p class="">
+                  A hidden gem away from the city, offering lush green meadows
+                  and peaceful walking paths for relaxation.
                 </p>
+                <div class="dishes">
+                  <span class="rounded py-1 px-2 mx-1">Indian</span>
+                  <span class="rounded py-1 px-2 mx-1">Chinese</span>
+                </div>
+                <hr class="bg-opacity-10" />
+                <a href="./order-now.html" class="btn w-100 py-2" id="explore"
+                  >Explore more</a
+                >
               </div>
-              <!-- botton -->
-              <div
-                class="d-flex justify-content-center align-content-center gap-3 botton"
-              >
-                <!-- sign up button -->
-                <a href="#" class="btnsignup rounded-2">Sign up</a>
-                <!-- order btn -->
-                <a href="#" class="btnorder rounded-2">Order Now</a>
+            </div>
+            <!-- Card 4 -->
+            <div class="card border-0 rounded-3">
+              <div class="image position-relative">
+                <img
+                  src="./Images/card-1.jpeg"
+                  alt="image"
+                  class="w-100 border-0 rounded-top-3"
+                />
+                <span class="star position-absolute rounded-pill px-2">
+                  <i class="bi bi-star-fill"></i>
+                  3.6
+                </span>
+              </div>
+              <div class="description p-3 border-0">
+                <h6 class="fw-bolder">Under The Mango Tree</h6>
+                <p class="">
+                  Enjoy the thrill of grill and barbecue at Under The Mango Tree
+                  restaurant at Jehan Numa Palace, Bhopal. Head here now!
+                </p>
+                <div class="dishes">
+                  <span class="rounded py-1 px-2 mx-1">Indian</span>
+                  <span class="rounded py-1 px-2 mx-1">Chinese</span>
+                  <span class="rounded py-1 px-2 mx-1">Italian</span>
+                </div>
+                <hr class="bg-opacity-10" />
+                <a href="./order-now.html" class="btn w-100 py-2" id="explore"
+                  >Explore more</a
+                >
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="card border-0 rounded-3">
+              <div class="image position-relative">
+                <img
+                  src="./Images/card-3.jpeg"
+                  alt="image"
+                  class="w-100 border-0 rounded-top-3"
+                />
+                <span class="star position-absolute rounded-pill px-2">
+                  <i class="bi bi-star-fill"></i>
+                  3.6
+                </span>
+              </div>
+              <div class="description p-3 border-0">
+                <h6 class="fw-bolder">Under The Mango Tree</h6>
+                <p class="">
+                  Enjoy the thrill of grill and barbecue at Under The Mango Tree
+                  restaurant at Jehan Numa Palace, Bhopal. Head here now!
+                </p>
+                <div class="dishes">
+                  <span class="rounded py-1 px-2 mx-1">Indian</span>
+                  <span class="rounded py-1 px-2 mx-1">Chinese</span>
+                  <span class="rounded py-1 px-2 mx-1">Italian</span>
+                </div>
+                <hr class="bg-opacity-10" />
+                <a href="./order-now.html" class="btn w-100 py-2" id="explore"
+                  >Explore more</a
+                >
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="card border-0 rounded-3">
+              <div class="image position-relative">
+                <img
+                  src="./Images/card-2.jpeg"
+                  alt="image"
+                  class="w-100 border-0 rounded-top-3"
+                />
+                <span class="star position-absolute rounded-pill px-2">
+                  <i class="bi bi-star-fill"></i>
+                  3.6
+                </span>
+              </div>
+              <div class="description p-3 border-0">
+                <h6 class="fw-bolder">Under The Mango Tree</h6>
+                <p class="">
+                  Enjoy the thrill of grill and barbecue at Under The Mango Tree
+                  restaurant at Jehan Numa Palace, Bhopal. Head here now!
+                </p>
+                <div class="dishes">
+                  <span class="rounded py-1 px-2 mx-1">Indian</span>
+                  <span class="rounded py-1 px-2 mx-1">Chinese</span>
+                  <span class="rounded py-1 px-2 mx-1">Italian</span>
+                </div>
+                <hr class="bg-opacity-10" />
+                <a href="./order-now.html" class="btn w-100 py-2" id="explore"
+                  >Explore more</a
+                >
               </div>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleRide"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleRide"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      </section>
+
+      <!-- Craving by number -->
+      <section class="details py-5">
+        <!-- Heading -->
+        <div class="trust text-center">
+          <h2 class="fw-bold display-6">Cravings by the Numbers</h2>
+          <p class="trust-content fs-5">
+            See why millions trust us for their daily food delivery needs
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="records container">
+          <div class="row my-5 g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="record-cards d-grid place-items-center text-center gap-2 p-4 shadow rounded-2 h-100"
+              >
+                <div class="trust-delivery display-6 display-md-5 fw-bold">
+                  2.5M+
+                </div>
+                <h3 class="fs-5 fw-semibold text-black">
+                  Successful Deliveries
+                </h3>
+                <p class="trust-description">
+                  Orders delivered with care and precision
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="record-cards d-grid place-items-center text-center gap-2 p-4 shadow rounded-2 h-100"
+              >
+                <div class="trust-customer display-6 display-md-5 fw-bold">
+                  500K+
+                </div>
+                <h3 class="fs-5 fw-semibold text-black">Happy Customers</h3>
+                <p class="trust-description">
+                  Satisfied users enjoying delicious food
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="record-cards d-grid place-items-center text-center gap-2 p-4 shadow rounded-2 h-100"
+              >
+                <div class="trust-delivery display-6 display-md-5 fw-bold">
+                  5K+
+                </div>
+                <h3 class="fs-5 fw-semibold text-black">Partner Restaurants</h3>
+                <p class="trust-description">
+                  Restaurants serving amazing cuisine
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="record-cards d-grid place-items-center text-center gap-2 p-4 shadow rounded-2 h-100"
+              >
+                <div class="trust-customer display-6 display-md-5 fw-bold">
+                  1K+
+                </div>
+                <h3 class="fs-5 fw-semibold text-black">
+                  Active Delivery Partners
+                </h3>
+                <p class="trust-description">
+                  Riders ensuring quick and safe delivery
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer review -->
+      <section class="py-5">
+        <h2 class="text-center fw-bold text-black">What Our Customers Say</h2>
+        <p class="feedback text-center">Real feedback from real food lovers</p>
+        <div class="container px-5">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 p-3">
+              <div class="rating-card d-grid gap-2 rounded-2 p-4 shadow">
+                <div class="d-flex gap-2 mb-2">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <h3 class="fs-5">Amazing Service!</h3>
+                <p>
+                  "The food arrived hot and fresh. The delivery was incredibly
+                  fast. Highly impressed with Cravings' service!"
+                </p>
+                <div class="review-detail d-flex gap-3">
+                  <div class="review-name-logo rounded-circle p-3">
+                    <b>AJ</b>
+                  </div>
+                  <div class="review-name d-grid">
+                    <span class="fw-bold">Arjun J.</span>
+                    <span>Verified Buyer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-3">
+              <div class="rating-card d-grid gap-2 rounded-2 p-4 shadow">
+                <div class="d-flex gap-2 mb-2">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <h3 class="fs-5">Best App Ever!</h3>
+                <p>
+                  "Easy to use interface, wide variety of restaurants, and quick
+                  delivery. I order from Cravings every week!"
+                </p>
+                <div class="review-detail d-flex gap-3">
+                  <div class="review-name-logo1 rounded-circle p-3">
+                    <b>SP</b>
+                  </div>
+                  <div class="review-name d-grid">
+                    <span class="fw-bold">Sneha P.</span>
+                    <span>Verified Buyer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-3">
+              <div class="rating-card d-grid gap-2 rounded-2 p-4 shadow">
+                <div class="d-flex gap-2 mb-2">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <h3 class="fs-5">Excellent Choices</h3>
+                <p>
+                  "Love the variety of restaurants available. Found my new
+                  favorite spot through Cravings. Definitely worth it!"
+                </p>
+                <div class="review-detail d-flex gap-3">
+                  <div class="review-name-logo rounded-circle p-3">
+                    <b>RK</b>
+                  </div>
+                  <div class="review-name d-grid">
+                    <span class="fw-bold">Raj Kumar</span>
+                    <span>Verified Buyer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Become a partner -->
+      <section class="partner py-5">
+        <div class="partner-div d-grid gap-3 justify-content-center my-3">
+          <h2 class="text-center fw-bold fs-2">Become a Restaurant Partner</h2>
+          <p class="fs-6 partner-para text-center">
+            Grow your business with Cravings. Join thousands of restaurants
+            already delivering with us.
+          </p>
+          <div class="d-flex justify-content-center">
+            <a href="" class="btn px-4 py-2" id="partner-btn"
+              >Partner With Us</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- section1 Featured Restaurants -->
-    <section>
-      <div>jio3gonuo</div>
-    </section>
-    <!-- section2 -->
-    <section></section>
+    <!-- Footer -->
+    <footer>
+      <section class="footer-section pt-4 pb-3">
+        <div class="footer-div w-100 mt-2 pb-5">
+          <p class="text-center">
+            --- Your favorite food delivery platform connecting customers with
+            restaurants and riders. ---
+          </p>
+          <div class="footer-outer d-grid pt-4">
+            <div class="footer-logo me-5 d-flex justify-content-center">
+              <img src="./Images/logo-circle.jpeg" alt="footerLogo" />
+            </div>
 
-    <!-- section3 -->
-    <section></section>
+            <div class="quick-links d-grid">
+              <h4 class="mb-1 fw-bold">Quick Links</h4>
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About</a>
+              <a href="./order-now.html">Order Now</a>
+            </div>
 
-    <!-- section4 -->
-    <section></section>
+            <div class="quick-links d-grid">
+              <h4 class="mb-1 fw-bold">For Restaurants</h4>
+              <a href="">Partner With Us</a>
+              <a href="">Restaurant Dashboard</a>
+            </div>
 
-    <!-- footerwork -->
-    <footer></footer>
+            <div class="quick-links d-grid">
+              <h4 class="mb-1 fw-bold">For Riders</h4>
+              <a href="">Become a Rider</a>
+              <a href="">Rider Dashboard</a>
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="quick-links d-grid">
+              <h4 class="mb-1 fw-bold">Feedback & Support</h4>
+              <a href="">Submit Feedback</a>
+              <a href="">Help Center</a>
+              <a href="">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        <div class="border-bottom footer-division"></div>
+        <div class="copy-right pt-4 d-flex justify-content-between">
+          <div class="d-flex gap-2">
+            <i class="bi bi-c-circle"></i>
+            <p>2026 Cravings. All rights reserved.</p>
+          </div>
+          <div class="d-flex gap-4">
+            <a href="./privacy-policy.html">Privacy Policy</a>
+            <a href="./terms-of-service.html">Terms of Service</a>
+            <a href="./sitemap.html">Site Map</a>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- BootStrap Link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
