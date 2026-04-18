@@ -515,5 +515,22 @@ footer {
   height: 90vh !important;
 }
 
+/* help center */
+
+.help-center-input{
+  background: #9D9FA1 !important;
+  color: #444343;
+  border: 0px solid #9D9FA1;
+}
+
+.btn-help-center{
+  background: var(--color-primary);
+  color: var(--color-base-100);
+}
+
+.questionmark-icon{
+  color: var(--color-primary);
+}
+
 
 
