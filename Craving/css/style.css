@@ -532,29 +532,19 @@ footer {
   color: var(--color-primary);
 }
 
-/* Order Now  */
-
-.featuredRestaurant-menu,
-.orderNow-top-input,
-.orderNow-top,
-input {
-  background: var(--color-base-200);
+/* Order now */
+#order-now-bg{
+    background-color: var(--color-base-200);
 }
 
-.featuredRestaurant-menu .orderNow-top-input .orderNow-top {
-  border: 1px solid var(--color-primary);
-  border-radius: 10px;
-  width: 80%;
+.order-now-search-div {
+    border: 1px solid var(--color-primary);
+    width: 85%;
+    margin-left: 7%;
 }
 
-.featuredRestaurant-menu .orderNow-top-input input {
-  outline: none;
-}
-
-.orderNow-top-input {
-  position: sticky;
-  top: 0;
-  z-index: 998;
+#order-now-all-card:hover {
+    box-shadow: 0 4px 6px -3px gray;
 }
 
 
