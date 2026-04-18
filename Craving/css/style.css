@@ -444,7 +444,6 @@ footer {
     font-size: 14px;
 }
 
-/* Meet the team */
 .team-profile {
     background-color: var(--color-primary);
     height: 70px;
@@ -465,7 +464,56 @@ footer {
     font-size: 12px;
 }
 
-/* ABOUT HERO */
+/* about page */
+.about-herocontent {
+    top: 26%;
+    left: 25%;
+}
+
+.privacy-herocontent {
+    top: 16%;
+    left: 25%;
+}
+
+.about-herocontent,
+.privacy-herocontent {
+    img {
+        height: 80px;
+        width: 80px;
+    }
+
+    h1 {
+        span {
+            color: var(--color-primary);
+        }
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.privacy-herocontent .privacy-value {
+    font-size: 16px !important;
+}
+
+.about-rating {
+    background-color: var(--color-neutral);
+}
+
+.logocircle{
+    border-radius: 50%;
+}
+
+/* contact page */
+
+.contact-image{
+  height: 85vh !important;
+}
+
+.feedback-image{
+  height: 90vh !important;
+}
 
 
 
