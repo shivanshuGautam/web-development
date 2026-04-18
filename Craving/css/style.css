@@ -407,4 +407,13 @@ footer {
     font-size: 16px;
 }
 
+/* about page */
+.aboutPic 
+{
+    background-image: url(../Images/about.jpeg);
+    Width: 862 px;
+    height: 400px;
+  
+}
+
 
