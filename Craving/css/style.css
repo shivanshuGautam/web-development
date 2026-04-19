@@ -303,7 +303,7 @@ header {
     width: 125px;
 }
 
-.logocircle{
+.logocircle {
     border-radius: 50%;
 }
 
@@ -502,42 +502,43 @@ footer {
     background-color: var(--color-neutral);
 }
 
-.logocircle{
+.logocircle {
     border-radius: 50%;
 }
 
 /* contact page */
 
-.contact-image{
-  height: 85vh !important;
+.contact-image {
+    height: 85vh !important;
 }
 
-.feedback-image{
-  height: 90vh !important;
+.feedback-image {
+    height: 90vh !important;
 }
 
 /* help center */
 
-.help-center-input{
-  background: #9D9FA1 !important;
-  color: #444343;
-  border: 0px solid #9D9FA1;
+.help-center-input {
+    background: #9D9FA1 !important;
+    color: #444343;
+    border: 0px solid #9D9FA1;
 }
 
-.btn-help-center{
-  background: var(--color-primary);
-  color: var(--color-base-100);
+.btn-help-center {
+    background: var(--color-primary);
+    color: var(--color-base-100);
 }
 
-.questionmark-icon{
-  color: var(--color-primary);
+.questionmark-icon {
+    color: var(--color-primary);
 }
-.fw-bold{
+
+.fw-bold {
     color: #c2410c;
 }
 
 /* Order now */
-#order-now-bg{
+#order-now-bg {
     background: #F5EDE5;
 }
 
@@ -551,11 +552,8 @@ footer {
     box-shadow: 0 4px 6px -3px gray;
 }
 
+/* privacy and policy page */
 
-
-
-
-
-
-
-
+.privacyPic{
+    background-image: url(../Images/pic2.PNG);
+}
