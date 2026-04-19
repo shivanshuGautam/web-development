@@ -535,7 +535,7 @@ footer {
 
 /* Order now */
 #order-now-bg{
-    background-color: var(--color-base-200);
+    background: #F5EDE5;
 }
 
 .order-now-search-div {
