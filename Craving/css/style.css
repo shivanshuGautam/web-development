@@ -532,6 +532,9 @@ footer {
 .questionmark-icon{
   color: var(--color-primary);
 }
+.fw-bold{
+    color: #c2410c;
+}
 
 /* Order now */
 #order-now-bg{
@@ -547,6 +550,30 @@ footer {
 #order-now-all-card:hover {
     box-shadow: 0 4px 6px -3px gray;
 }
+
+/* Main container */
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;   /* horizontally center */
+  align-items: center;       /* vertically center */
+  position: relative;
+  background-color: #f8f8f8;
+}
+
+/* Background image */
+.login-bg img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.6);   /* thoda dark karne ke liye */
+}
+
+
+
+
+
 
 
 
