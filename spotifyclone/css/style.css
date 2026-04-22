@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: yellow;
+    width: 400px;
+    border-radius: 1rem;
+}
+
+.maincontainer {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+}
+
+.music {
+    background-color: aqua;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.nav-option {
+    line-height: 2.5rem;
+   opacity: 0.23;
+   padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover {
+
+    opacity: 2;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
