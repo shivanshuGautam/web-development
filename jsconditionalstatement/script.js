@@ -48,7 +48,7 @@ if (user === "abcde" && pass === "12345") {
 // question no.6
 let data;
 let name1 = "shivanshu";
-data = name1 || "n/a"
+data = name1 || "n/a";
 console.log(data);
 // if(name1)
 // {
@@ -58,7 +58,39 @@ console.log(data);
 //     data = "n/a"
 // }
 
+// question .7
+let x = 2;
+console.log(x > 10 && y < 5);
 
-// question .7 
- let x = 2;
- console.log(x>10 && y<5);
+// question no.9
+
+for (let i = 0; i < 5; i++) {
+  if (i === 3) {
+    continue;
+  }
+  console.log;
+}
+
+// switch- case
+
+let choice = 8;
+switch (choice) {
+  case 1: {
+    console.log("tea");
+    break;
+  }
+
+  case 2: {
+    console.log("lassi");
+    break;
+  }
+
+  case 3: {
+    console.log("water");
+    break;
+  }
+
+  default: {
+    console.log("jal-jeera");
+  }
+}
