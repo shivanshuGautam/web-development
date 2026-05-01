@@ -19,3 +19,18 @@ console.log(abcd);
 
 // call back function
 abc();
+
+function addtwonumber(one, num2) {
+  const num = one + num2;
+  console.log(num);
+}
+addtwonumber(4,5);
+addtwonumber(6,5);
+
+function shivanshu()
+{
+  console.log("gautam bhai");
+  return 10;
+}
+
+ console.log(shivanshu());
