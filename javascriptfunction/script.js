@@ -48,6 +48,10 @@ console.log(addtwonumber1(8, 9));
 // };
 
 // or
-const addtwonumber11 = (q1,q2) => q1+q2;
+const addtwonumber11 = (q1, q2) => q1 + q2;
 
 console.log(addtwonumber11(9, 99));
+
+// only one parameter --- (q4)---q4 aise bhi likh sakte hai
+const squareonenumber = q4 => q4 * q4;
+console.log(squareonenumber(24));
