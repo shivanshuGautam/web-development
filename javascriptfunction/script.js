@@ -39,7 +39,15 @@ console.log(shivanshu());
 const addtwonumber1 = function (a1, a2) {
   return a1 + a2;
 };
-console.log(addtwonumber1(8,9));
-
+console.log(addtwonumber1(8, 9));
 
 // arrow function
+
+// const addtwonumber11 = (q1, q2) => {
+//   return q1 + q2;
+// };
+
+// or
+const addtwonumber11 = (q1,q2) => q1+q2;
+
+console.log(addtwonumber11(9, 99));
