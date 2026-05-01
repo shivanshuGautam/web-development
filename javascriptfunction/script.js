@@ -24,13 +24,22 @@ function addtwonumber(one, num2) {
   const num = one + num2;
   console.log(num);
 }
-addtwonumber(4,5);
-addtwonumber(6,5);
+addtwonumber(4, 5);
+addtwonumber(6, 5);
 
-function shivanshu()
-{
+function shivanshu() {
   console.log("gautam bhai");
   return 10;
 }
 
- console.log(shivanshu());
+console.log(shivanshu());
+
+//  function expresssion
+
+const addtwonumber1 = function (a1, a2) {
+  return a1 + a2;
+};
+console.log(addtwonumber1(8,9));
+
+
+// arrow function
