@@ -11,5 +11,11 @@ let abc = function () {
 };
 console.log(abc);
 
+// not use a let---(const)use
+const abcd = function () {
+  console.log("Hello world");
+};
+console.log(abcd);
+
 // call back function
 abc();
