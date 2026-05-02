@@ -20,6 +20,8 @@ console.log(abcd);
 // call back function
 abc();
 
+
+// .FUNCTION
 function addtwonumber(one, num2) {
   const num = one + num2;
   console.log(num);
@@ -34,14 +36,14 @@ function shivanshu() {
 
 console.log(shivanshu());
 
-//  function expresssion
+// 2. function expresssion
 
 const addtwonumber1 = function (a1, a2) {
   return a1 + a2;
 };
 console.log(addtwonumber1(8, 9));
 
-// arrow function
+//3. arrow function
 
 // const addtwonumber11 = (q1, q2) => {
 //   return q1 + q2;
@@ -55,3 +57,8 @@ console.log(addtwonumber11(9, 99));
 // only one parameter --- (q4)---q4 aise bhi likh sakte hai
 const squareonenumber = q4 => q4 * q4;
 console.log(squareonenumber(24));
+
+
+// 4. IIfe function
+
+
