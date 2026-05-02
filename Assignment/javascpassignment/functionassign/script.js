@@ -87,3 +87,41 @@ console.log("greaternumber:" + greaternumber(78, 89));
 console.log("greaternumber:" + greaternumber(500, 89));
 console.log("greaternumber:" + greaternumber(9, 89));
 console.log("greaternumber:" + greaternumber(45, 89));
+
+//2.function expression
+
+// 1. Create a function expression and store it in a variable, then call it.
+const call = function () {
+  console.log("This is a Function Expression!");
+};
+call();
+
+// 2. Write a function expression and execute it using the variable name.
+
+const variable = function () {
+  console.log("shivanshu bhai");
+};
+variable();
+
+// 3. Create a function expression that takes one value and displays it.
+const displays = function (value) {
+  console.log("this is a value:" + value);
+};
+displays(56);
+displays("mahakal");
+
+// 4. Write a function expression that stores and prints a message.
+const showmessage = function (message) {
+  const mess = "welcome to java script";
+  console.log(mess);
+};
+showmessage();
+
+// 5. Create a function expression with two parameters and display both values.
+const value = function (value1, value2) {
+  console.log("value one :" + value1);
+  console.log("value one :" + value2);
+};
+
+value(12, 14);
+
