@@ -125,3 +125,24 @@ const value = function (value1, value2) {
 
 value(12, 14);
 
+// 6. Write two function expressions with different variable names and call both.
+
+const call1 = function (va4r1) {
+  console.log(va4r1);
+};
+const call12 = function (vart) {
+  console.log(vart);
+};
+call1(34);
+call1(89);
+
+
+// 7. Create a function expression and assign it to another variable, then call both.
+const call13 = function (va4r1) {
+  console.log(va4r1);
+};
+call13(340);
+call13(3490);
+
+// 
+
