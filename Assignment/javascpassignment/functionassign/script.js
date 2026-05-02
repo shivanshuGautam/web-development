@@ -74,3 +74,17 @@ function averagenum(num1, num2, num3) {
 
 let result4 = averagenum(10, 38, 16);
 console.log(result4);
+
+// 12. Build a function that takes two numbers and returns the greater number.
+function greaternumber(num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else {
+    return num2;
+  }
+}
+
+console.log("greaternumber:" + greaternumber(78, 89));
+console.log("greaternumber:" + greaternumber(500, 89));
+console.log("greaternumber:" + greaternumber(9, 89));
+console.log("greaternumber:" + greaternumber(45, 89));
