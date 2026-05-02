@@ -83,7 +83,6 @@ function greaternumber(num1, num2) {
     return num2;
   }
 }
-
 console.log("greaternumber:" + greaternumber(78, 89));
 console.log("greaternumber:" + greaternumber(500, 89));
 console.log("greaternumber:" + greaternumber(9, 89));
