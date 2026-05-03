@@ -37,3 +37,19 @@ function addnum(num1, num2) {
 var sumresult1 = addnum(a, b);
 var sumresult2 = addnum(4, 5);
 console.log(sumresult1, sumresult2);
+
+// q2
+var c = 30;
+var d = 40;
+var sumresult3 = addnum(c, d);
+console.log(sumresult3);
+function addnum(num1, num2) {
+  var sum = num1 + num2;
+  return sum;
+}
+
+// q3
+console.log(e);
+let e = 40;
+let k = 50;
+
