@@ -54,7 +54,8 @@ let e = 40;
 let k = 50;
 console.log(e);
 
+console.log(a1);
 const a1 =10;
 const a2 = 20;
-console.log(a1);
+
 
