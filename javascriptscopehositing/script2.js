@@ -49,7 +49,12 @@ function addnum(num1, num2) {
 }
 
 // q3
-console.log(e);
+// console.log(e);
 let e = 40;
 let k = 50;
+console.log(e);
+
+const a1 =10;
+const a2 = 20;
+console.log(a1);
 
