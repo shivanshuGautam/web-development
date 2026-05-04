@@ -9,5 +9,5 @@ function submit() {
   document.getElementById("fullname").value = "";
 
   document.getElementById("datacard").classList.add("divShow");
-   document.getElementById("datacard").classList.add("divHide");
+   document.getElementById("datacard").classList.remove("divHide");
 }
