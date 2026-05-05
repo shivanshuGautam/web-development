@@ -36,7 +36,24 @@ function submit() {
   document.getElementById("mydata3").innerText = fn3;
 }
 
+function change() {
+  console.log("clicked a button");
+
+  const fn6 = document.getElementById("myheading");
+  fn6.innerHTML = "HY SHIVANSHU GAUTAM";
+}
+
+function change1() {
+  console.log("clicked a button");
+
+  const fn7 = document.getElementById("p1");
+  fn7.innerHTML =
+    "This handout will help you understand how paragraphs are formed, how to develop stronger paragraphs, and how to completely and clearly express your ideas.";
+}
+
 //    <div class=" border rounded shadow w-25 p-2 divHide" id="datacard">
 //         <span>Name:</span>
 //       <span id="mydata"></span>
 //     </div>
+
+// q1
