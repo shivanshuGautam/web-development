@@ -33,9 +33,9 @@
 
 // short
 
-// let unar = [12.67, 65, 9, 43, 65, 73, 24];
-// unar.sort;
-// console.log(unar);
+let unar = [12, 65, 9, 43, 65, 73, 24];
+unar.sort;
+console.log(unar);
 
 let arr = [12, 13, 45, 67, 89, 34];
 for (var i = 0; i < arr.length; i++) {
