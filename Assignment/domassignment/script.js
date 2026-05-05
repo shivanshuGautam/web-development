@@ -25,12 +25,15 @@ function submit() {
   console.log(fn1);
 
   const fn2 = document.getElementById("city").value;
-   console.log(fn2);
+  console.log(fn2);
 
-    const fn3 = document.getElementById("password1").value;
-   console.log(fn3);
-   
+  const fn3 = document.getElementById("password1").value;
+  console.log(fn3);
+
   document.getElementById("mydata").innerText = fn;
+  document.getElementById("mydata1").innerText = fn1;
+  document.getElementById("mydata2").innerText = fn2;
+  document.getElementById("mydata3").innerText = fn3;
 }
 
 //    <div class=" border rounded shadow w-25 p-2 divHide" id="datacard">
