@@ -2,19 +2,18 @@ let fd = [
   ["Shivanshu Gautam", "09-07-2005", 47944646, "Bhopal", "Student"],
   ["Satyanshu Gautam", "09-07-2005", 47944646, "Bhopal", "Student"],
   ["Himanshu Gautam", "09-07-2005", 47944646, "Bhopal", "Student"],
-  ["Shva Gautam", "09-07-2005", 47944646, "Bhopal", "Student"]
+  ["Shva Gautam", "09-07-2005", 47944646, "Bhopal", "Student"],
 ];
 
 fd.forEach((e1) => {
   console.log(e1);
-  
 });
 
 // json format
 
 let fddata = [
   {
-    name: "Shivanshu Verma",
+    name: "Shivanshu gautam",
     dob: "2004-03-15",
     phone: "+91-9876543210",
     city: "Satna",
@@ -52,10 +51,7 @@ let fddata = [
 
 fddata.forEach((e) => {
   console.log(e);
-  
 });
 
 console.log(fddata);
 console.log(fddata[1].phone);
-
-
