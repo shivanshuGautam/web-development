@@ -55,3 +55,18 @@ fddata.forEach((e) => {
 
 console.log(fddata);
 console.log(fddata[1].phone);
+
+// objectkey
+// objevt.value
+
+let fddata1 = [
+  {
+    name: "Shivanshu gautam",
+    dob: "2004-03-15",
+    phone: "+91-9876543210",
+    city: "Satna",
+    profession: "Computer Science Student",
+  },
+];
+console.log(Object.keys(fddata1));
+console.log(Object.values(fddata1));
