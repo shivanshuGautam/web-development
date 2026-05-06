@@ -57,16 +57,36 @@ console.log(fddata);
 console.log(fddata[1].phone);
 
 // objectkey
-// objevt.value
+// objectvalue
 
-let fddata1 = [
-  {
-    name: "Shivanshu gautam",
-    dob: "2004-03-15",
-    phone: "+91-9876543210",
-    city: "Satna",
-    profession: "Computer Science Student",
-  },
-];
-console.log(Object.keys(fddata1));
-console.log(Object.values(fddata1));
+// let fddata1 = [
+//   {
+//     name: "Shivanshu gautam",
+//     dob: "2004-03-15",
+//     phone: "+91-9876543210",
+//     city: "Satna",
+//     profession: "Computer Science Student",
+//   },
+// ];
+// console.log(Object.keys(fddata1));
+// console.log(Object.values(fddata1));
+// console.log(Object.entriess(fddata1));
+
+// sort
+// let ar = [22, 34, 4, 5, 6, 7, 89, 4, 3, 6, 1];
+// ar.sort((a, b) => a - b);
+// console.log(ar);
+// array.find(callback(element, index, array))
+// findfunction
+// console.log(ar.findIndex((val) => val === 6));
+// console.log(ar.find((val) => val === 6));
+// console.log(ar.findLastIndex((val) => val === 6));
+
+// map , filter (function)
+// slice
+let arr2 = [1, 3, 4, 56, 32, 67, 87, 9, 1, 2, 32, 76, 43, 23, 31, 27, 96, 90];
+console.log(arr2.slice(0, 7));
+// split
+let ab = "this is a web";
+console.log(ab.split(" "));
+console.log(ab.split("-"));
