@@ -90,3 +90,19 @@ console.log(arr2.slice(0, 7));
 let ab = "this is a web";
 console.log(ab.split(" "));
 console.log(ab.split("-"));
+
+let str = "this is a string";
+console.log(str.charAt(5));
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+
+let a = 3.12;
+console.log(a);
+console.log(typeof a);
+// console.log(b);
+
+let c = 3.766655970044;
+console.log(c.toFixed(5));
+
+let d = "shivanshu gautam";
+console.log("my name is ${fullname}");
