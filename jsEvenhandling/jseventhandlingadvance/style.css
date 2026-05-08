@@ -1,0 +1,42 @@
+#bulb1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-light1 {
+    margin-top: 5px;
+    background: red;
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn-light2 {
+    margin-top: 5px;
+    background: green;
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn-light3 {
+    margin-top: 5px;
+    background: blue;
+    border: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.pairntsbox{
+    display: flex;
+    gap: 10px;
+}
