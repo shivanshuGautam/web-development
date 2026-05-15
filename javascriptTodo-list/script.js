@@ -40,5 +40,11 @@ function addNewTask() {
 
   document.getElementById("taskList").appendChild(LI);
 
+  saveToLocalStorage(taskToAdd);
+
   document.getElementById("newTask").value = "";
+}
+
+function saveToLocalStorage(taskToAdd) {
+
 }
