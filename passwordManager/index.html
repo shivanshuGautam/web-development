@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>passwordManager</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header class="bg-dark text-light p-3 text-center">
+      <h1>password Manager</h1>
+    </header>
+
+    <main>
+      <div class="w-50 mx-auto rounded border p-3 mt-4">
+        <form id="passform">
+          <input
+            type="text"
+            name="sideName"
+            id="sideName"
+            placeholder="Enter the website name"
+            class="form-control"
+          />
+        </form>
+
+        <form>
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter the website name"
+            class="form-control"
+          />
+        </form>
+
+        <form>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Enter the website name"
+            class="form-control"
+          />
+        </form>
+
+        <div class="d-flex ">
+          <button type="submit" class="btn-outline-primary">save</button>
+          <button type="submit" class="btn-outline-danger">clear</button>
+        </div>
+
+      </div>
+    </main>
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
