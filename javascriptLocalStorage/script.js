@@ -18,6 +18,9 @@ form.addEventListener("submit", (event) => {
   let name = event.target.Name.value;
   let email1 = event.target.email.value;
   let phone = event.target.phone.value;
+  let name1 = event.target.Name.value=" ";
+  let email12 = event.target.email.value=" ";
+  let phone3 = event.target.phone.value=" ";
 
   let userdata = JSON.parse(localStorage.getItem("UserDetails")) ?? [];
   userdata.push({
