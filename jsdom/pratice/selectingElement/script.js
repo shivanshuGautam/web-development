@@ -24,3 +24,8 @@ console.log(tagElement[0].innerHTML);
 
 let classElement = document.getElementsByClassName("main");
 console.log(classElement[0].innerText);
+
+// 4.document.querySelector("selector")
+
+
+
