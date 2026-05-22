@@ -26,6 +26,12 @@ let classElement = document.getElementsByClassName("main");
 console.log(classElement[0].innerText);
 
 // 4.document.querySelector("selector")
+let headingElement1 = document.querySelector("h1");
+console.log(headingElement1.innerText);
 
+// 5,document.querySelectorAll("selector")
 
-
+let headingElement2 = document.querySelectorAll("h1");
+headingElement2.forEach((item, index) => {
+  console.log(item.innerText);
+});
