@@ -11,7 +11,7 @@
 
 async function GetNewJoke()
     {
-        const API_URL = "https://v2.jokeapi.dev/joke/Any"
+        const API_URL = "https://official-joke-api.appspot.com/jokes/random"
         const response = await fetch(API_URL);
 
         console.log(response);
