@@ -19,7 +19,7 @@
 //   return { lattitude, longitude };
 // }
 
-const API_KEY = "64b100efd5659c763dc908b0c518e00d";
+const API_KEY = "";
 
 async function getWeather() {
   const cityName = document.getElementById("cityName").value.trim();
