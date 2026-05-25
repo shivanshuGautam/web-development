@@ -15,9 +15,10 @@ body {
 
 .container {
     /* border: 1px solid black; */
+    width: 600px;
     margin-top: 130px;
     background: linear-gradient(to bottom, #00BFFF, #87CEFA);
-box-shadow: none;
+ 
 }
 
 .first {
@@ -27,3 +28,4 @@ box-shadow: none;
 .first span {
     margin-right: 20px;
 }
+
