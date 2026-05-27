@@ -1,36 +1,79 @@
-const API_KEY = "64b100efd5659c763dc908b0c518e00d";
+const apiKey =  "64b100efd5659c763dc908b0c518e00d";
 
-// const API_KEY = "64b100efd5659c763dc908b0c518e00d";
+async function fetchWeatherData(city) {
+    try {
+        const response = await fetch(
+            `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
+        );
 
-async function getWeather() {
-  const cityName = document.getElementById("cityName").value.trim();
-
-  const { Lattitude, Longitude } = await getGeoLocation(cityName);
-
-  //   console.log({ Lattitude, Longitude });
-
-  const WEATHER_API = `https://api.openweathermap.org/data/2.5/weather?lat=${Lattitude}&lon=${Longitude}&appid=${API_KEY}`;
-
-  const response = await fetch(WEATHER_API);
-  const data = await response.json();
-
-  //console.log(data);
-
-  const temperature = data.main.temp - 273.15;
-
-  document.getElementById("Temperature").innerText = temperature.toFixed(2);
+        if (!response.ok) {
+            throw new Error("Unable to fetch weather data");
+        }
+        const data = await response.json();
+        console.log(data);
+        // console.log(data.main.temp);
+        // console.log(data.name);
+        // console.log(data.wind.speed);
+        // console.log(data.main.humidity);
+        // console.log(data.visibility);
+        updateWeatherUI(data);
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-async function getGeoLocation(city) {
-  const GEO_LOC_API = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
+const cityElement = document.querySelector(".city");
+const temperature = document.querySelector(".temp");
+const windSpeed = document.querySelector(".wind-speed");
+const humidity = document.querySelector(".humidity");
+const visibility = document.querySelector(".visibility-distance");
 
-  const response = await fetch(GEO_LOC_API);
-  const data = await response.json();
+const descriptionText = document.querySelector(".description-text");
+const date = document.querySelector(".date");
+const descriptionIcon = document.querySelector(".description i");
 
-  //   console.log(data);
+// fetchWeatherData();
 
-  const Lattitude = data[0].lat;
-  const Longitude = data[0].lon;
+function updateWeatherUI(data) {
+    cityElement.textContent = data.name;
+    temperature.textContent = `${Math.round(data.main.temp)}`;
+    windSpeed.textContent = `${data.wind.speed} km/h`;
+    humidity.textContent = `${data.main.humidity}%`;
+    visibility.textContent = `${data.visibility / 1000} km`;
+    descriptionText.textContent = data.weather[0].description;
 
-  return { Lattitude, Longitude };
+    const currentDate = new Date();
+    date.textContent = currentDate.toDateString();
+    const weatherIconName = getWeatherIconName(data.weather[0].main);
+    descriptionIcon.innerHTML = `<i class="material-icons">${weatherIconName}</i>`;
+}
+
+const formElement = document.querySelector(".search-form");
+const inputElement = document.querySelector(".city-input");
+
+formElement.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const city = inputElement.value;
+    if (city !== "") {
+        fetchWeatherData(city);
+        inputElement.value = "";
+    }
+});
+
+function getWeatherIconName(weatherCondition) {
+    const iconMap = {
+        Clear: "wb_sunny",
+        Clouds: "wb_cloudy",
+        Rain: "umbrella",
+        Thunderstorm: "flash_on",
+        Drizzle: "grain",
+        Snow: "ac_unit",
+        Mist: "cloud",
+        Smoke: "cloud",
+        Haze: "cloud",
+        Fog: "cloud",
+    };
+
+    return iconMap[weatherCondition] || "help";
 }
