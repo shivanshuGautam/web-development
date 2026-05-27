@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Currency Exchange Tool</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="converter-container">
+    <header>Currency Exchange</header>
+    <form action="#">
+      <div class="input-amount">
+        <p>Amount</p>
+        <input type="text" value="1">
+      </div>
+      <div class="currency-selectors">
+        <div class="currency-from">
+          <p>From</p>
+          <div class="selector-box">
+            <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+            <select></select>
+          </div>
+        </div>
+        <div class="switch-icon"><i class="fas fa-exchange-alt"></i></div>
+        <div class="currency-to">
+          <p>To</p>
+          <div class="selector-box">
+            <img src="https://flagcdn.com/48x36/in.png" alt="flag">
+            <select></select>
+          </div>
+        </div>
+      </div>
+      <div class="rate-display">Getting exchange rate...</div>
+      <button>Convert</button>
+    </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
