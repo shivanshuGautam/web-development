@@ -45,3 +45,19 @@ console.log("for each");
 arr.forEach((elements) => {
   console.log(elements);
 });
+
+
+// 
+// Array banाना
+let fruits = ["Apple", "Banana", "Mango"];
+
+// Access karna
+console.log(fruits[0]); // Output: Apple
+console.log(fruits[2]); // Output: Mango
+
+// Update karna
+fruits[1] = "Orange";
+console.log(fruits); // ["Apple", "Orange", "Mango"]
+
+// Length property
+console.log(fruits.length); // Output: 3
