@@ -106,3 +106,26 @@ console.log(c.toFixed(5));
 
 let d = "shivanshu gautam";
 console.log("my name is ${fullname}");
+
+// example-------
+let student = {
+  name: "Shivanshu",
+  age: 21,
+  course: "Computer Science",
+  greet: function() {
+    console.log("Hello, " + this.name);
+  }
+};
+
+// Access karna
+console.log(student.name);   // Output: Shivanshu
+console.log(student["age"]); // Output: 21
+
+
+// 
+for (let key in student) {
+  console.log(key + " : " + student[key]);
+}
+
+
+// 
