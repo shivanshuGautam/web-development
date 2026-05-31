@@ -48,7 +48,7 @@ arr.forEach((elements) => {
 
 
 // 
-// Array banाना
+// Array create 
 let fruits = ["Apple", "Banana", "Mango"];
 
 // Access karna
