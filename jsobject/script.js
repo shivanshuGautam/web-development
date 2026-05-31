@@ -128,4 +128,48 @@ for (let key in student) {
 }
 
 
-// 
+// 1. Create Object
+
+let student1 = {
+  name: "Shivanshu",
+  age: 21,
+  course: "Computer Science"
+};
+
+// 2. Access Properties
+console.log(student.name);     // Shivanshu
+console.log(student["course"]); // Computer Science
+
+// 3. Add / Update Property
+javascript
+student.city = "Satna";   // Add new property
+student.age = 22;         // Update existing property
+
+// 4. Delete Property
+javascript
+delete student.course;
+console.log(student); 
+// { name: "Shivanshu", age: 22, city: "Satna" }
+
+// 5. Check Property
+javascript
+console.log("name" in student); // true
+console.log("marks" in student); // false
+
+// 6. Loop Through Object
+javascript
+for (let key in student) {
+  console.log(key + " : " + student[key]);
+}
+
+// 7. Object Methods
+javascript
+let car = {
+  brand: "Ford",
+  start: function() {
+    console.log(this.brand + " is starting...");
+  }
+};
+
+car.start(); // Ford is starting...
+
