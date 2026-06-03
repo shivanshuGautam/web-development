@@ -1,5 +1,5 @@
 import React from 'react'
-import{link} from 'react-router-dom'
+// import{link} from 'react-router-dom'
 function Footer() {
   return (
     <div>
