@@ -172,4 +172,5 @@ let car = {
 };
 
 car.start(); // Ford is starting...
+//7th [point object 
 
