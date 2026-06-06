@@ -1,4 +1,4 @@
-function ContactUs() {
+function ContactsUs() {
   return (
     <>
       <div className="container d-flex justify-content-center align-items-center">
@@ -8,4 +8,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default ContactsUs;

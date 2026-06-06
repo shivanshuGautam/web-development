@@ -1,9 +1,9 @@
-import Header from "./Component/Header";
-import Footer from "./Component/Footer";
+import Header from "./components/Header";
+// import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Product from "./pages/Product";
-import ContactUs from "./pages/ContactUs";
+import ContactsUs from "./pages/ContactsUs";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
@@ -19,82 +19,16 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/product" element={<Product />} />
-          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/contact-us" element={<ContactsUs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
-        <Footer/>
+        {/* <Footer /> */}
       </BrowserRouter>
+    
     </>
+    
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

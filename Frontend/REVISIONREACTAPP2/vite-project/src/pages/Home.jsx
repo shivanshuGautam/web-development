@@ -1,11 +1,11 @@
-function ContactUs() {
+function Home() {
   return (
     <>
       <div className="container d-flex justify-content-center align-items-center">
-        <span className="text-primary fs-2">Contact Us</span>
+        <span className="text-primary fs-2">Home</span>
       </div>
     </>
   );
 }
 
-export default ContactUs;
+export default Home;
