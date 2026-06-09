@@ -1,4 +1,4 @@
-// import Header from "./components/Header";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const App = () => {
         <h1>helloWorld</h1> */}
 
       <BrowserRouter>
-        {/* <Header /> */}
+        <Header />
         <Footer />
       </BrowserRouter>
     </>
