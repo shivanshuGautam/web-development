@@ -128,6 +128,7 @@ for (let key in student) {
 }
 
 
+//same question
 // 1. Create Object
 
 let student1 = {
