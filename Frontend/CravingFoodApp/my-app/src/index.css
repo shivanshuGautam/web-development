@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+:root {
+  /* Primary Brand Color */
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #60a5fa;
+
+  /* Secondary Color */
+  --secondary: #64748b;
+
+  /* Background Colors */
+  --background: #ffffff;
+  --background-light: #f8fafc;
+
+  /* Text Colors */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+
+  /* Status Colors */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* Border */
+  --border: #e2e8f0;
+}
