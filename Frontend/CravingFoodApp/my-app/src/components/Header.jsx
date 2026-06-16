@@ -7,7 +7,7 @@ function Header() {
             <img src="images/craving-logo.png" alt="" className="w-full" />
           </div>
 
-          <div className="ml-auto flex gap-4 items-center">
+          <div className="ml-auto flex gap-3 items-center">
             <button className="text-black text-[17px]">Login</button>
             <button className="px-2 py-2 bg-amber-50 text-amber-500 rounded-xl">
               Register
