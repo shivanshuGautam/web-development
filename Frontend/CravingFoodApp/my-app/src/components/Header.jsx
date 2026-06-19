@@ -1,7 +1,7 @@
 function Header() {
   return (
     <>
-      <header className="p-3 shadow-xl bg-[#c2410c] h-[60px] flex items-center">
+      <header className="p-3 shadow-xl bg-[#c2410c] h-[50px] flex items-center">
         <div className="w-full flex items-center px-4">
           <div className="max-w-[100px]">
             <img src="images/craving-logo.png" alt="" className="w-full" />
