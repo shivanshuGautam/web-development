@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
   res.json({ message: "welcome to my first backend project" });
 });
 
+app.post("/login",(req,res)=>{
+    res.json({message: "login sucessfull"})
+})
+
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
