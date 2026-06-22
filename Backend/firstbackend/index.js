@@ -7,7 +7,6 @@ import PublicRouter from "./src/routers/public.route.js";
 const app = express();
 
 app.use("/auth", AuthRouter);
-
 app.use("/public", PublicRouter);
 
 // default api
