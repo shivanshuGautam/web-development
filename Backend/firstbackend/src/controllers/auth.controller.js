@@ -9,3 +9,4 @@
   export  const Registeruser = (req,res)=> {
     res.json({message:"register sucessfully"});
 }
+
