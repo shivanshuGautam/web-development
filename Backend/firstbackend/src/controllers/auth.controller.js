@@ -1,4 +1,6 @@
 import User from "../models/user.model.js";
+import bcrypt from "bcrypt";
+
 
 export const Registeruser = async (req, res) => {
   try {
@@ -27,11 +29,15 @@ export const Registeruser = async (req, res) => {
       url: photourl,
       publicId: null,
     };
+    
+    const SALT =  await bcrypt.genSalt(10);
+
+    const hashedPassword = await bcrypt.hash(password,SALT);
 
     const newUser = await User.create({
       fullname,
       email,
-      password,
+      password:hashedPassword,
       phone,
       gender,
       dob,
@@ -62,7 +68,7 @@ export const loginuser = async (req, res) => {
     error.statusCode= 400;
     return next(error)
    }
-
+  
    const existingUser = await User.findOne({email});
    if(!existingUser){
      const error = new Error("Email Not Registred");
